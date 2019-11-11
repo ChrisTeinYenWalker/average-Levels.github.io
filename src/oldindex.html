@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <title>Grade to level</title>
+    <meta lang="en">
+    <script src="sections/text.js"></script>
+    <script src="sections/level.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $(".show-text").toggleClass("show-table");
+              });
+            });
+            </script>
+<style>
+        .show-text p{
+            display: block
+        }
+        .show-text table{
+            display: none
+        }
+        
+        .show-text.show-table p{
+            display: none
+        }
+        .show-text.show-table table{
+            display: block
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Your percentage and a calculator from levels to grade</h1>
+    </header>
+    <main> 
+        <div>
+            <nav>
+                <ul>
+                    <li><p><button onclick="home()">Home</button></p></li>
+                    <li><p><button onclick="letters()">Levels</button></p></li>
+                    <li><p><button onclick="numbers()">GPA</button></p></li>
+                    <li><p><button onclick="percentages()">Percentages</button></p></li>
+                </ul>     
+            </nav>  
+            <p id="myid">home</p>    
+        </div>
+            <table class="show-text">
+            <p>any text</p>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>How many levels</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>4+</td>
+                    <td><input id="4p"type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                    <td>4</td>
+                    <td><input id="4" type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>4-</td>
+                        <td><input id="4m" type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>3+</td>
+                        <td><input id="3p" type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input id="3"type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>3-</td>
+                        <td><input id="3m" type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>2+</td>
+                        <td><input id="2p"type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input id="2"type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>2-</td>
+                        <td><input id="2m" type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>1+</td>
+                        <td><input id="1p"type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input id="1" type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>1-</td>
+                        <td><input id="1m" type="levels" placeholder="number of levels"></td>
+                    </tr>
+                    <tr>
+                        <td>R</td>
+                        <td><input id="R" type="levels" placeholder="number of levels"></td>
+                </tr>
+            </table>
+            <button id="button">toggle</button>
+            <button>Calculate</button> 
+    </main>        
+            <footer class="footer contact ti nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <p>To check out more projects vist my github page by clicking the image or checking out my user name by typing
+                                Master4020 on the github explore page or email at walkercs4020@gmail.com</p>
+                        </li>
+                        <li> 
+                            <a href = "mailto:Walkercs4020@gmail.com"><img src="https://img.icons8.com/color/1600/gmail.png" width="51" height="60" sytle="border-radius= 10%"></a>
+                        </li> 
+                        <li>
+                            <a href = "https://github.com/Master4020" target="blank"><img src="https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-12-19/288981919427_f45f04edd92902a96859_512.png" width="51" height="60" sytle="border-radius= 10%"></a>
+                        </li>
+                    </ul>
+                </nav>
+        </footer>
+</body>

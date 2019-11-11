@@ -1,0 +1,60 @@
+.footer{
+    background-color: #161515;
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+    border-bottom: 0%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.footer p{
+    font-size: 120%;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace; 
+}
+.footer img{
+    height: 50px;
+    width: 50px;
+    display: inline;
+    vertical-align: 50%;
+    border-radius: 20%;
+    padding: 1.5em;
+}
+.contact img{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: inline-block;
+}
+
+.contact li{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: inline-block;
+    position: center;
+}
+.nav ul{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    position: sticky;
+    text-align: center;
+}
+
+.show-text p{
+    display: block
+}
+.show-text table{
+    display: none
+}
+
+.show-text.show-table p{
+    display: none
+}
+.show-text.show-table table{
+    display: block
+}
+
+
+
