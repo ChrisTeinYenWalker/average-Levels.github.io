@@ -4,7 +4,7 @@ function totalamounts(){
 
     let fp = 0;
     fp += document.getElementById("4p").value;
-    fp *= 97.5;
+    fp *= 98.5;
 
     let f = 0;
     f += document.getElementById("4").value;
@@ -52,7 +52,7 @@ function totalamounts(){
 
     let r = 0;
     r += document.getElementById("R").value;
-    r *= 50
+    r *= 47.5
 
     totalamount.push(fp, f, fm, tm, t, tp, twop, two, twom, op, o, om , r);
     return totalamount;
@@ -107,26 +107,27 @@ function adding(a, b){
     return total/amount;
 };
 
-function convert(){
-    let amountofnumbers = totals();
-    let finalnumber = totalamounts();
-    //let positive = check(amountofnumbers);
-    if(1 === 1){
-        let product = adding(finalnumber, amountofnumbers);
-        document.getElementById('test').innerHTML = product;
+function check(a){
+    total = 0;
+    for(let i=0; i < a.length; i++){
+        total += a[i];
+    }
+    if(total === 0){
+        return false;
     }
     else{
-        document.getElementById('test').innerHTML = "no";
+        return true
     }
 }
 
-function check(value){
-    for(let i = 0; i < 13; i++){ 
-        if(value[i] > -1){
-            return true;
-        }
+function convert(){
+    let amountofnumbers = totals();
+    let finalnumber = totalamounts();
+    let product = adding(finalnumber, amountofnumbers); 
+    if(check(finalnumber) === true){
+        document.getElementById('test').innerHTML = product;
+    }
+    else if(check(finalnumber) === false){
+        document.getElementById('test').innerHTML = "no";
     }
 };
-
-
-
