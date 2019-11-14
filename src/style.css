@@ -1,5 +1,26 @@
+
+
+body{
+    margin:0px;
+    padding:0px;
+    background-image: url('images/Untitled-design-2019-10-16T154345.143\ \(2\).jpg')
+}
+.header{
+    margin-top: 0px;
+
+}
+.header{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    margin-bottom: 10%;
+}
+.main{
+    background-color: skyblue;
+}
+
 .footer{
-    background-color: #161515;
+    background-color: #443c3c;
     padding-bottom: 0px;
     margin-bottom: 0%;
     border-bottom: 0%;
