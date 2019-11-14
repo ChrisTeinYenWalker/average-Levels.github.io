@@ -23,6 +23,7 @@ $(document).ready(function(){
 <main> 
 <div class="show-text">
         <p>any text</p>
+        <form id="reset">
         <table>
             <thead>
                 <tr>
@@ -85,10 +86,13 @@ $(document).ready(function(){
                     </tr>
             </tbody>
         </table>
-    </div>
+        <input type="button" onclick="reset()" value="clear">
+    </form>
+   </div>
+
 <button id="button">button</button>
-<button onclick="convert()">cal</button>
 <button onclick="awnser()">Calculate</button>
+
 <p id="test"></p>
     <footer class="footer contact ti nav">
         <nav>

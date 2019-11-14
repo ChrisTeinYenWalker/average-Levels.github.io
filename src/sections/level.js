@@ -120,7 +120,7 @@ function check(a){
     }
 }
 
-function convert(){
+function awnser(){
     let amountofnumbers = totals();
     let finalnumber = totalamounts();
     let product = adding(finalnumber, amountofnumbers); 
@@ -131,3 +131,7 @@ function convert(){
         document.getElementById('test').innerHTML = "no";
     }
 };
+
+function reset(){
+    document.getElementById('reset').reset();
+}
