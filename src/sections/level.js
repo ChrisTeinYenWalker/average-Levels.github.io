@@ -1,58 +1,32 @@
-
 function totalamounts(){
     var totalamount = [];
 
-    let fp = 0;
-    fp += document.getElementById("4p").value;
-    fp *= 98.5;
+    let fp = document.getElementById("4p").value*98.5;
 
-    let f = 0;
-    f += document.getElementById("4").value;
-    f *= 90.5;
+    let f = document.getElementById("4").value*90.5;
+    
 
-    let fm = 0;
-    fm += document.getElementById("4m").value;
-    fm *= 83;
+    let fm = document.getElementById("4m").value*83
 
-    let tp = 0;
-    tp += document.getElementById("3p").value;
-    tp *= 77.5;
+    let tp = document.getElementById("3p").value*77.5;
 
-    let t = 0;
-    t = document.getElementById("3").value;
-    t *= 75;
+    let t = document.getElementById("3").value*75;
 
-    let tm = 0;
-    tm += document.getElementById("3m").value;
-    tm *= 72.5;
+    let tm = document.getElementById("3m").value*72.5;
 
-    let twop = 0;
-    twop += document.getElementById("2p").value;
-    twop *= 67.5;
+    let twop = document.getElementById("2p").value*67.5;
 
-    let two = 0;
-    two += document.getElementById("2").value;
-    two *= 65;
+    let two = document.getElementById("2").value*65;
 
-    let twom = 0;
-    twom += document.getElementById("2m").value;
-    twom *= 62.5;
+    let twom = document.getElementById("2m").value*62.5;
 
-    let op = 0;
-    op += document.getElementById("1p").value;
-    op *= 57.5;
+    let op = document.getElementById("1p").value*57.5;
 
-    let o = 0;
-    o += document.getElementById("1").value;
-    o *= 55;
+    let o = document.getElementById("1").value*55;
 
-    let om = 0;
-    om += document.getElementById('1m').value;
-    om *= 52.5;
+    let om = document.getElementById('1m').value*52.5;
 
-    let r = 0;
-    r += document.getElementById("R").value;
-    r *= 47.5
+    let r = document.getElementById("R").value*47.5
 
     totalamount.push(fp, f, fm, tm, t, tp, twop, two, twom, op, o, om , r);
     return totalamount;
@@ -63,33 +37,21 @@ function totals(){
 
     let fail = parseInt(document.getElementById("R").value);
 
-    let one = 0;
-    one += parseInt(document.getElementById("1").value);
-    let oneminus = 0;
-    oneminus += parseInt(document.getElementById("1m").value);
-    let oneplus = 0;
-    oneplus += parseInt(document.getElementById("1p").value);
+    let one = parseInt(document.getElementById("1").value);
+    let oneminus = parseInt(document.getElementById("1m").value);
+    let oneplus = parseInt(document.getElementById("1p").value);
 
-    let twominus = 0;
-    twominus += parseInt(document.getElementById("2m").value);
-    let twon = 0;
-    twon += parseInt(document.getElementById("2").value);
-    let twoplus = 0;
-    twoplus += parseInt(document.getElementById("2p").value);
+    let twominus = parseInt(document.getElementById("2m").value);
+    let twon = parseInt(document.getElementById("2").value);
+    let twoplus = parseInt(document.getElementById("2p").value);
 
-    let threeminus = 0;
-    threeminus += parseInt(document.getElementById("3m").value);
-    let three = 0;
-    three += parseInt(document.getElementById("3").value);
-    let threeplus = 0;
-    threeplus += parseInt(document.getElementById("3p").value);
+    let threeminus = parseInt(document.getElementById("3m").value);
+    let three = parseInt(document.getElementById("3").value);
+    let threeplus = parseInt(document.getElementById("3p").value);
 
-    let fourminus = 0;
-    fourminus += parseInt(document.getElementById("4m").value);
-    let fourplus = 0;
-    fourplus += parseInt(document.getElementById("4p").value);
-    let four = 0;
-    four += parseInt(document.getElementById("4").value);
+    let fourminus = parseInt(document.getElementById("4m").value);
+    let fourplus = parseInt(document.getElementById("4p").value);
+    let four = parseInt(document.getElementById("4").value);
 
     total.push(fourplus, four, fourminus, threeplus, three, threeminus, twoplus, twon, twominus, oneplus, one, oneminus, fail);  
     return total
