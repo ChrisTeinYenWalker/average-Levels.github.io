@@ -18,51 +18,42 @@ const Grade = [
 function totalamounts(){
     // Get the sum
     let sum = 0;
-    for (let i=0; i<document.getElementsByClassName("levels").length; i++) {
+    for (let i=0; i<13; i++) {//figure out better for statement
         let el = document.getElementsByClassName("levels")[i];
         // For each DOM element we iterate through, add the product of the element's value
         // and the percentage (Grade) to sum.
         sum += Grade[i] * parseFloat(el.value);
     }
-    return sum;
+    return sum
 };
 
 // Return the total number of grades inputed
 function totals(){    
     let total = 0;
-    for (let i=0; i<document.getElementsByClassName("levels").length; i++) {
-        total += parseFloat(document.getElementsByClassName("levels")[i].value);
+    for(let i=0; i < document.getElementsByClassName("levels").length; i++){
+        total += parseFloat(document.getElementsByClassName("levels")[i].value) || 0;
     }
     return total
 };
-
 
 
 function adding(sum, numberOfGrades){
     return sum/numberOfGrades;
 };
 
-function check(a){
-    total = 0;
-    for(let i=0; i < a.length; i++){
-        total += a[i];
-    }
-    if(total === 0){
-        return false;
-    }
-    else{
-        return true
-    }
-}
 
 function awnser(){
     let amountofnumbers = totals();
     let finalnumber = totalamounts();
-    let average = adding(finalnumber, amountofnumbers);
-    document.getElementById("test").innerHTML = average;
+    if(amountofnumbers == 0){
+        document.getElementById('test').innerHTML = "please try again";   
+    }
+    else{
+        let average = adding(finalnumber, amountofnumbers);
+        document.getElementById("test").innerHTML = average;
+    }
 };
 
 function reset(){
     document.getElementById('reset').reset();
-}
-
+};

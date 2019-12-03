@@ -8,20 +8,63 @@
     <link rel="stylesheet" href="src/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
+    //levels
 $(document).ready(function(){
-  $("#button").click(function(){ //add a id if you want
+  $("#button").click(function(){ 
     $(".show-text").toggleClass("show-table");
   });
 });
+
+//converter
+$(document).ready(function(){
+  $("#button2").click(function(){ 
+    $(".show-text").toggleClass("show-table");
+  });
+});
+
 </script>
 </head>
-<body >
+<body>
 <header class="header">
     <h1>Your percentage and a calculator from levels to grade</h1>
 </header>
 <main class='main'> 
+
+        <button id="button">levels</button>
+        <button id="button2">converter</button> 
+    <!-- converter -->
+    <!-- <div> 
+        <p></p>
+        <form id="reset">
+        <table></table>
+        </form>
+        <thead>
+            <th>input</th>
+            <th>choice of conversion</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input></td>
+                <td> 
+                    <div class="dropdown" style="float:left;">
+                        <button class="dropbtn">Left</button>
+                        <div class="dropdown-content" style="left:0;">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="levels" type="button" onclick="reset()" value="clear"></td>
+            </tr>
+        </tbody>
+            
+     </div> -->
+
+    <!-- levels table --> 
 <div class="show-text">
-        <p>any text</p>
         <form id="reset">
         <table>
             <thead>
@@ -82,15 +125,19 @@ $(document).ready(function(){
                         <tr>
                             <td>R</td>
                             <td><input class="levels" type="number" placeholder="number of levels" value=0></td>
-                    </tr>
-            </tbody>
-        </table>
-        <input type="button" onclick="reset()" value="clear">
-    </form>
+                        </tr>
+                        <tr>
+                            <td><input class="levels" type="button" onclick="reset()" value="clear"></td>
+                        </tr>
+                        <tr>
+                        </tr>
+                </tbody>
+            </table>
+        </form>
    </div>
+   <button onclick="awnser()">Calculate</button>
 
-<button id="button">button</button>
-<button onclick="awnser()">Calculate</button>
+
 
 <p id="test"></p>
     <footer class="footer contact ti nav">
