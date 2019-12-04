@@ -18,13 +18,13 @@ const Grade = [
 function totalamounts(){
     // Get the sum
     let sum = 0;
-    for (let i=0; i<13; i++) {//figure out better for statement
-        let el = document.getElementsByClassName("levels")[i];
+    let el = document.getElementsByClassName('levels');
+    for (let i=0; i < Grade.length; i++){//figure out better for statement
         // For each DOM element we iterate through, add the product of the element's value
         // and the percentage (Grade) to sum.
-        sum += Grade[i] * parseFloat(el.value);
+        sum += Grade[i] * parseFloat(el[i+1].value); //problem with calling i in parsefloat
     }
-    return sum
+    return sum;
 };
 
 // Return the total number of grades inputed

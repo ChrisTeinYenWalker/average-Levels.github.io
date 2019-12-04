@@ -114,3 +114,50 @@ body{
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+  .show-text-con p{
+    display: block
+}
+
+.show-text-con table{
+    display: none
+}
+
+.show-text-con a{
+    display: none
+}
+
+.show-text-con button{
+    display: none
+}
+
+.show-text-con th{
+    display: none
+}
+
+.show-text-con input{
+    display: none
+}
+
+.show-text-con.show-table-con p{
+    display: none
+}
+
+.show-text-con.show-table-con table{
+    display: block
+}
+
+.show-text-con.show-table-con button{
+    display: block
+}
+
+.show-text-con.show-table-con a{
+    display: block
+}
+
+.show-text-con.show-table-con th{
+    display: block
+}
+
+.show-text-con.show-table-con input{
+    display: block
+}
