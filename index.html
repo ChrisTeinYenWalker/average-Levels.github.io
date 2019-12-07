@@ -8,17 +8,59 @@
     <link rel="stylesheet" href="src/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
+
     //levels
 $(document).ready(function(){
   $("#button").click(function(){ 
-    $(".show-text").toggleClass("show-table");
+    $("#levelTable").slideDown("slow");
+    $("#gpaTable").slideUp("slow");
+    $("#percentTable").slideUp("slow");
+    $("#convertertable").slideUp("slow");
+    $("#Home").slideUp("slow");
   });
 });
 
 //converter
 $(document).ready(function(){
   $("#button2").click(function(){ 
-    $(".show-text-con").toggleClass("show-table-con");
+    $("#convertertable").slideDown("slow");
+    $("#gpaTable").slideUp("slow");
+    $("#percentTable").slideUp("slow");
+    $("#levelTable").slideUp("slow");
+    $("#Home").slideUp("slow");
+  });
+});
+
+//Gpa
+$(document).ready(function(){
+  $("#button3").click(function(){ 
+    $("#gpaTable").slideDown("slow");
+    $("#percentTable").slideUp("slow");
+    $("#convertertable").slideUp("slow");
+    $("#levelTable").slideUp("slow");
+    $("#Home").slideUp("slow");
+  });
+});
+
+//percentages
+$(document).ready(function(){
+  $("#button4").click(function(){ 
+    $("#percentTable").slideDown("slow");
+    $("#convertertable").slideUp("slow");
+    $("#levelTable").slideUp("slow");
+    $("#gpaTable").slideUp("slow");
+    $("#Home").slideUp("slow");
+  });
+});
+
+$(document).ready(function(){
+    $("#Home").slideDown("slow");
+  $("#home").click(function(){ 
+    $("#Home").slideDown("slow");
+    $("#percentTable").slideUp("slow");
+    $("#convertertable").slideUp("slow");
+    $("#levelTable").slideUp("slow");
+    $("#gpaTable").slideUp("slow");
   });
 });
 
@@ -29,29 +71,51 @@ $(document).ready(function(){
     <h1>Your percentage and a calculator from levels to grade</h1>
 </header>
 <main class='main'> 
-
+        <button id="home">Home</button>
         <button id="button">levels</button>
-        <button id="button2">converter</button> 
+        <button id="button3">GPA</button>
+        <button id = "button4">percentage</button>
+        <button id="button2">Converter</button> 
     <!-- converter -->
-    <div class="show-text-con"> 
-        <p></p>
-        <form id="reset">
-        <table></table>
-        </form>
+    <div id="Home">
+        <p>Welcome</p>
+        <h1>new stuff coming soon</h1>
+    </div>
+    <div id="gpaTable">
+        <h1>Coming Soon</h1>
+    </div>
+    <div id="percentTable"> 
+        <h1>Coming Soon</h1>
+    </div>
+    <div id="convertertable"> 
+        <!-- <table> 
         <thead>
-            <th>input</th>
-            <th>choice of conversion</th>
+            <tr>
+                <th>what you have</th>
+                <th>input</th>                
+                <th>choice of conversion</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
+                <td> 
+                    <div class="dropdown" style="float:left;">
+                        <button class="dropbtn">What it is</button>
+                        <div class="dropdown-content" style="left:0;">
+                            <a href="#">Gpa</a>
+                            <a href="#">Percent</a>
+                            <a href="#">Level</a>
+                        </div>
+                    </div>
+                </td>
                 <td><input></td>
                 <td> 
                     <div class="dropdown" style="float:left;">
-                        <button class="dropbtn">Left</button>
+                        <button class="dropbtn">What to Converter to</button>
                         <div class="dropdown-content" style="left:0;">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">Gpa</a>
+                            <a href="#">Percent</a>
+                            <a href="#">Level</a>
                         </div>
                     </div>
                 </td>
@@ -60,11 +124,12 @@ $(document).ready(function(){
                 <td><input class="levels" type="button" onclick="reset()" value="clear"></td>
             </tr>
         </tbody>
-            
+    </table>
+             -->
+        <h1>Coming soon</h1>
      </div> 
-
     <!-- levels table --> 
-<div class="show-text">
+<div id="levelTable">
         <form id="reset">
         <table>
             <thead>

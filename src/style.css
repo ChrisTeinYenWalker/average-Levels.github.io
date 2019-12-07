@@ -63,22 +63,56 @@ body{
     text-align: center;
 }
 
-.show-text p{
-    display: block
-}
+#levelTable, #button {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #levelTable {
+    padding: 50px;
+    display: none;
+  }
 
-.show-text table{
-    display: none
-}
 
-.show-text.show-table p{
-    display: none
-}
+  #convertertable, #button2 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #convertertable {
+    padding: 50px;
+    display: none;
+  }
 
-.show-text.show-table table{
-    display: block
-}
 
+  #percentTable, #button4 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #percentTable {
+    padding: 50px;
+    display: none;
+  }
+
+
+  #gpaTable, #button3 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #gpaTable {
+    padding: 50px;
+    display: none;
+  }
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -113,51 +147,3 @@ body{
   .dropdown-content a:hover {background-color: #f1f1f1;}
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-  .show-text-con p{
-    display: block
-}
-
-.show-text-con table{
-    display: none
-}
-
-.show-text-con a{
-    display: none
-}
-
-.show-text-con button{
-    display: none
-}
-
-.show-text-con th{
-    display: none
-}
-
-.show-text-con input{
-    display: none
-}
-
-.show-text-con.show-table-con p{
-    display: none
-}
-
-.show-text-con.show-table-con table{
-    display: block
-}
-
-.show-text-con.show-table-con button{
-    display: block
-}
-
-.show-text-con.show-table-con a{
-    display: block
-}
-
-.show-text-con.show-table-con th{
-    display: block
-}
-
-.show-text-con.show-table-con input{
-    display: block
-}

@@ -1,24 +1,11 @@
-/*function gpaToLevel{
+function gpa(){
 
+};
+
+function levls(){
+
+};
+
+function percent(){
+    
 }
-
-function gpaToPercent{
-
-}
-
-function levelToGpa{
-
-}
-
-function percentToGpa{
-
-}
-
-function levelToPercent{
-
-}
-
-function percentToLevel{
-
-}
-*/
