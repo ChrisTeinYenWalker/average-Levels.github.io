@@ -1,11 +1,20 @@
+function finder(id){
+    x = document.getElementsByClassName().value //call id
+    document.getElementById('whatType').innerHTML = x    
+}
+
 function gpa(){
 
 };
 
-function levls(){
+function levels(){
 
 };
 
 function percent(){
+    
+}
+
+function conversion(){
     
 }

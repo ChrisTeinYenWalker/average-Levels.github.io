@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-
+    //create a for loop to make more better
     //levels
 $(document).ready(function(){
   $("#button").click(function(){ 
@@ -70,8 +70,8 @@ $(document).ready(function(){
 <header class="header">
     <h1>Your percentage and a calculator from levels to grade</h1>
 </header>
-<main class='main'> 
-        <button id="home">Home</button>
+<div class='main'> 
+    <button id="home">Home</button>
         <button id="button">levels</button>
         <button id="button3">GPA</button>
         <button id = "button4">percentage</button>
@@ -88,7 +88,8 @@ $(document).ready(function(){
         <h1>Coming Soon</h1>
     </div>
     <div id="convertertable"> 
-        <!-- <table> 
+    <table> 
+        <form>
         <thead>
             <tr>
                 <th>what you have</th>
@@ -102,31 +103,34 @@ $(document).ready(function(){
                     <div class="dropdown" style="float:left;">
                         <button class="dropbtn">What it is</button>
                         <div class="dropdown-content" style="left:0;">
-                            <a href="#">Gpa</a>
-                            <a href="#">Percent</a>
-                            <a href="#">Level</a>
+                            <p id="con" onclick="finder()">Level</p>
+                            <p id="con" onclick="finder()">Gpa</p>
+                            <p id="con" onclick="finder()">Percent</p>
                         </div>
                     </div>
+                    <p id="whatType"></p>
                 </td>
-                <td><input></td>
+                <td><input class=""></td>
                 <td> 
                     <div class="dropdown" style="float:left;">
                         <button class="dropbtn">What to Converter to</button>
                         <div class="dropdown-content" style="left:0;">
-                            <a href="#">Gpa</a>
-                            <a href="#">Percent</a>
-                            <a href="#">Level</a>
+                            <p id="con" onclick="finder()">Level</p>
+                            <p id="con" onclick="finder()">Gpa</p>
+                            <p id="con" onclick="finder()">Percent</p>
                         </div>
+                        <p id="whatReturn"></p>
                     </div>
                 </td>
             </tr>
             <tr>
-                <td><input class="levels" type="button" onclick="reset()" value="clear"></td>
+                <td><input type='reset' value="clear"></td>
             </tr>
         </tbody>
+    </form>
     </table>
-             -->
-        <h1>Coming soon</h1>
+             
+        <!-- <h1>Coming soon</h1> -->
      </div> 
     <!-- levels table --> 
 <div id="levelTable">
@@ -199,12 +203,9 @@ $(document).ready(function(){
                 </tbody>
             </table>
         </form>
-   </div>
-   <button onclick="awnser()">Calculate</button>
-
-
-
-<p id="test"></p>
+        <button onclick="awnser()">Calculate</button>
+        <p id="test"></p>
+    </div>
     <footer class="footer contact ti nav">
         <nav>
             <ul>
@@ -221,6 +222,7 @@ $(document).ready(function(){
             </ul>
         </nav>
     </footer>
+</div>
 </body>
 </html>
 

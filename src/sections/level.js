@@ -22,7 +22,7 @@ function totalamounts(){
     for (let i=0; i < Grade.length; i++){//figure out better for statement
         // For each DOM element we iterate through, add the product of the element's value
         // and the percentage (Grade) to sum.
-        sum += Grade[i] * parseFloat(el[i+1].value); //problem with calling i in parsefloat
+        sum += Grade[i] * parseFloat(el[i].value); //problem with calling i in parsefloat
     }
     return sum;
 };
@@ -45,7 +45,7 @@ function adding(sum, numberOfGrades){
 function awnser(){
     let amountofnumbers = totals();
     let finalnumber = totalamounts();
-    if(amountofnumbers == 0){
+    if(amountofnumbers <= 0){
         document.getElementById('test').innerHTML = "please try again";   
     }
     else{
